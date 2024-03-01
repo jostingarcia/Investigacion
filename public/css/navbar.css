@@ -1,0 +1,116 @@
+.container_navbar{
+    position: relative;
+    width: 80%;
+    height: 100px;
+    overflow: hidden;
+}
+.tabs_navbar input{
+    visibility: hidden;
+    display: none;
+}
+.buttons_navbar{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    gap: 18px;
+    z-index: 10000000;
+}
+.buttons_navbar label{
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    opacity: 0.5;
+    border-radius: 28px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.tabs_navbar input:nth-child(1):checked ~ .buttons_navbar label:nth-child(1),
+.tabs_navbar input:nth-child(2):checked ~ .buttons_navbar label:nth-child(2),
+.tabs_navbar input:nth-child(3):checked ~ .buttons_navbar label:nth-child(3){
+    opacity: 1;
+    width: 50px;
+}
+.content_navbar{
+    position: relative;
+    width: 300vw;
+    display: flex;
+    transition: 0.5s;
+}
+.content_navbar .box{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    padding: 40px;
+}
+.content_navbar .box:nth-child(1){
+    background: linear-gradient(90deg, #4fccc6, #379d18);
+    background-image: url(/images/carrusel_nosotros_1_1.jpg);
+    background-size: cover;
+}
+.content_navbar .box:nth-child(2){
+    background: linear-gradient(90deg, #ff4e50, #f9d423);
+    background-image: url(/images/carrusel_nosotros_2_1.jpg);
+    background-size: cover;
+}
+.content_navbar .box:nth-child(3){
+    background: linear-gradient(90deg, #9d50bb, #6e18aa);
+    background-image: url(/images/carrusel_nosotros_3_1.jpg);
+    background-size: cover;
+
+}
+.tabs_navbar input:nth-child(1):checked ~ .content_navbar{
+    left: 0;
+}
+.tabs_navbar input:nth-child(2):checked ~ .content_navbar{
+    left: -100vw;
+}
+.tabs_navbar input:nth-child(3):checked ~ .content_navbar{
+    left: -200vw;
+}
+.content_navbar .box .content_box_navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.content_navbar .box .content_box_navbar ion-icon{
+    font-size: 12em;
+    color: #fff;
+    --ionicon-stroke-width: 16px
+}
+.content_navbar .box .content_box_navbar h2{
+    font-size: 3em;
+    color: #fff;
+}
+.content_navbar .box .content_box_navbar p{
+    font-size: 1.2em;
+    color: #fff;
+    max-width: 700px;
+    text-align: center;
+}
+.content_navbar .box .content_box_navbar button{
+    font-size: 1.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 35px;
+    background: #fff;
+    color: #333;
+    letter-spacing: 0.05em;
+    margin-top: 10px;
+    font-weight: 600;
+    border: none;
+    border-radius: 40px;
+    transition: 0.5s;
+}
+.content_navbar .box .content_box_navbar button:hover{
+    letter-spacing: 0.2em;
+}
+
+    

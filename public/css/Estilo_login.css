@@ -1,0 +1,40 @@
+body {
+  background-image: url("../Images/wallpaperbetter.com_1920x1080.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.login-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 90px;
+  border: 2px solid #fcfbfb;
+  border-radius: 7px;
+  background-color: rgba(62, 62, 81, 0.562)
+}
+
+h1 {
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+.error-message {
+  color: red;
+}
+
+.success-message {
+  color: green;
+}
